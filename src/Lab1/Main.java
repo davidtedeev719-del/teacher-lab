@@ -37,6 +37,9 @@ public class Main {
                     Teacher.mathTeachers7Class();
                     break;
                 case 5:
+                    Teacher.sortByName();
+                    break;
+                case 6:
                     break cycle;
 
                 default:
