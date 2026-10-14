@@ -202,23 +202,7 @@ public class Teacher {
 
 
 
-    // Б) Математики в 7-х классах
-    public static void mathTeachers7Class() {
 
-        System.out.println(
-                "\nПреподаватели-математики в 7-х классах:"
-        );
-
-        for (int i = 0; i < teachers.length; i++) {
-
-            if (teachers[i].getPredmet()
-                    .equalsIgnoreCase("математика")
-                    && teachers[i].getN_class() == 7) {
-
-                System.out.println(teachers[i]);
-            }
-        }
-    }
     // В) Сортировка по алфавиту
     public static void sortByName() {
 

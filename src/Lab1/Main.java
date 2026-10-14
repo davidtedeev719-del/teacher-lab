@@ -34,7 +34,7 @@ public class Main {
                     TeacherServes.totalLoad();
                     break;
                 case 4:
-                    Teacher.mathTeachers7Class();
+                    TeacherServes.mathTeachers7Class();
                     break;
                 case 5:
                     Teacher.sortByName();
