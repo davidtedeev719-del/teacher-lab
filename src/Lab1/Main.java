@@ -34,6 +34,9 @@ public class Main {
                     Teacher.totalLoad();
                     break;
                 case 4:
+                    Teacher.mathTeachers7Class();
+                    break;
+                case 5:
                     break cycle;
 
                 default:
