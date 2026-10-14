@@ -28,7 +28,7 @@ public class Main {
                     break;
 
                 case 2:
-                    Teacher.printTeachers();
+                    TeacherServes.printTeachers();
                     break;
                 case 3:
                     Teacher.totalLoad();
