@@ -37,7 +37,7 @@ public class Main {
                     TeacherServes.mathTeachers7Class();
                     break;
                 case 5:
-                    Teacher.sortByName();
+                    TeacherServes.sortByName();
                     break;
                 case 6:
                     break cycle;

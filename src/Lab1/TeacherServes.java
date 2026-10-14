@@ -67,4 +67,29 @@ public class TeacherServes {
             }
         }
     }
+    // В) Сортировка по алфавиту
+    public static void sortByName() {
+
+        for (int i = 0; i < teachers.length - 1; i++) {
+
+            for (int j = 0; j < teachers.length - 1 - i; j++) {
+
+                if (teachers[j].getFio()
+                        .compareTo(teachers[j + 1].getFio()) > 0) {
+
+                    Teacher temp = teachers[j];
+
+                    teachers[j] = teachers[j + 1];
+
+                    teachers[j + 1] = temp;
+                }
+            }
+        }
+
+        System.out.println("\nУчителя по алфавиту:");
+
+        for (int i = 0; i < teachers.length; i++) {
+            System.out.println(teachers[i]);
+        }
+    }
 }
