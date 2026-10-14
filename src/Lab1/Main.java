@@ -30,20 +30,7 @@ public class Main {
                 case 2:
                     Teacher.printTeachers();
                     break;
-
                 case 3:
-                    Teacher.totalLoad();
-                    break;
-
-                case 4:
-                    Teacher.mathTeachers7Class();
-                    break;
-
-                case 5:
-                    Teacher.sortByName();
-                    break;
-
-                case 6:
                     break cycle;
 
                 default:
