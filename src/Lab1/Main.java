@@ -31,7 +31,7 @@ public class Main {
                     TeacherServes.printTeachers();
                     break;
                 case 3:
-                    Teacher.totalLoad();
+                    TeacherServes.totalLoad();
                     break;
                 case 4:
                     Teacher.mathTeachers7Class();
