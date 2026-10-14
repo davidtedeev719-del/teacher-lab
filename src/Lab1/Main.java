@@ -31,6 +31,9 @@ public class Main {
                     Teacher.printTeachers();
                     break;
                 case 3:
+                    Teacher.totalLoad();
+                    break;
+                case 4:
                     break cycle;
 
                 default:
