@@ -24,7 +24,7 @@ public class Main {
             switch (c) {
 
                 case 1:
-                    Teacher.fillTeacher();
+                    TeacherServes.fillTeacher();
                     break;
 
                 case 2:

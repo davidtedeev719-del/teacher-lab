@@ -50,7 +50,7 @@ public class Teacher {
 
 
     // Ввод строки без цифр
-    private static String readString() {
+    public static String readString() {
 
         while (true) {
 
@@ -67,7 +67,7 @@ public class Teacher {
     }
 
     // Ввод числа с проверкой
-    private static int readInt(int min, int max) {
+    public static int readInt(int min, int max) {
 
         while (true) {
 
@@ -151,53 +151,8 @@ public class Teacher {
             this.hours = hours;
         }
     }
-
-    // Добавление новых учителей
-    public static void fillTeacher() {
-
-        System.out.print("Введите количество новых учителей: ");
-
-        int n = readInt(1, 100);
-
-        int oldSize = teachers.length;
-
-        Teacher[] newTeachers = new Teacher[oldSize + n];
-
-        // Копируем старых учителей
-        for (int i = 0; i < oldSize; i++) {
-            newTeachers[i] = teachers[i];
-        }
-
-        // Добавляем новых
-        for (int i = oldSize; i < oldSize + n; i++) {
-
-            System.out.println("\nУчитель " + (i - oldSize + 1));
-
-            System.out.print("ФИО: ");
-            String fio = readString();
-
-            System.out.print("Предмет: ");
-            String predmet = readString();
-
-            System.out.print("Класс: ");
-            int n_class = readInt(1, 11);
-
-            System.out.print("Кол-во часов: ");
-            int hours = readInt(1, 100);
-
-            newTeachers[i] = new Teacher(
-                    fio,
-                    predmet,
-                    n_class,
-                    hours
-            );
-        }
-
-        teachers = newTeachers;
-
-        System.out.println("\nНовые учителя добавлены!");
-    }
 }
+
 
 
 

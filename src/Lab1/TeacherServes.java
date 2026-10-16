@@ -92,4 +92,49 @@ public class TeacherServes {
             System.out.println(teachers[i]);
         }
     }
+    // Добавление новых учителей
+    public static void fillTeacher() {
+
+        System.out.print("Введите количество новых учителей: ");
+
+        int n = Teacher.readInt(1, 100);
+
+        int oldSize = teachers.length;
+
+        Teacher[] newTeachers = new Teacher[oldSize + n];
+
+        // Копируем старых учителей
+        for (int i = 0; i < oldSize; i++) {
+            newTeachers[i] = teachers[i];
+        }
+
+        // Добавляем новых
+        for (int i = oldSize; i < oldSize + n; i++) {
+
+            System.out.println("\nУчитель " + (i - oldSize + 1));
+
+            System.out.print("ФИО: ");
+            String fio = Teacher.readString();
+
+            System.out.print("Предмет: ");
+            String predmet = Teacher.readString();
+
+            System.out.print("Класс: ");
+            int n_class = Teacher.readInt(1, 11);
+
+            System.out.print("Кол-во часов: ");
+            int hours = Teacher.readInt(1, 100);
+
+            newTeachers[i] = new Teacher(
+                    fio,
+                    predmet,
+                    n_class,
+                    hours
+            );
+        }
+
+        teachers = newTeachers;
+
+        System.out.println("\nНовые учителя добавлены!");
+    }
 }
