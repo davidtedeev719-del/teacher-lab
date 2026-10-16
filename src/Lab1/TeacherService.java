@@ -2,6 +2,7 @@ package Lab1;
 
 public class TeacherService {
     private static Teacher[] teachers;
+
     // Первоначальное заполнение массива
     static {
         teachers = new Teacher[]{
@@ -12,6 +13,7 @@ public class TeacherService {
                 new Teacher("Сидоров Борис Маратович", "биология", 7, 4)
         };
     }
+
     // Распечатать всех учителей
     public static void printTeachers() {
 
@@ -21,6 +23,7 @@ public class TeacherService {
             System.out.println(teachers[i]);
         }
     }
+
     // А) Суммарная учебная нагрузка каждого учителя
     public static void totalLoad() {
 
@@ -60,6 +63,7 @@ public class TeacherService {
             }
         }
     }
+
     // Б) Математики в 7-х классах
     public static void mathTeachers7Class() {
 
@@ -77,6 +81,7 @@ public class TeacherService {
             }
         }
     }
+
     // В) Сортировка по алфавиту
     public static void sortByName() {
 
@@ -102,6 +107,7 @@ public class TeacherService {
             System.out.println(teachers[i]);
         }
     }
+
     // Добавление новых учителей
     public static void fillTeacher() {
 
@@ -146,5 +152,14 @@ public class TeacherService {
         teachers = newTeachers;
 
         System.out.println("\nНовые учителя добавлены!");
+    }
+
+    public static Teacher findByName(String fio) {
+        for (int i = 0; i < teachers.length; i++) {
+            if (teachers[i].getFio().equalsIgnoreCase(fio)) {
+                return teachers[i];
+            }
+        }
+        return null;
     }
 }
