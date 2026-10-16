@@ -1,6 +1,6 @@
 package Lab1;
 
-public class TeacherServes {
+public class TeacherService {
     private static Teacher[] teachers;
     // Распечатать всех учителей
     public static void printTeachers() {

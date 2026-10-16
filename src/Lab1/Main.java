@@ -24,20 +24,20 @@ public class Main {
             switch (c) {
 
                 case 1:
-                    TeacherServes.fillTeacher();
+                    TeacherService.fillTeacher();
                     break;
 
                 case 2:
-                    TeacherServes.printTeachers();
+                    TeacherService.printTeachers();
                     break;
                 case 3:
-                    TeacherServes.totalLoad();
+                    TeacherService.totalLoad();
                     break;
                 case 4:
-                    TeacherServes.mathTeachers7Class();
+                    TeacherService.mathTeachers7Class();
                     break;
                 case 5:
-                    TeacherServes.sortByName();
+                    TeacherService.sortByName();
                     break;
                 case 6:
                     break cycle;
