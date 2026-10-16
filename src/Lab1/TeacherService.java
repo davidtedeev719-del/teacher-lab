@@ -2,6 +2,16 @@ package Lab1;
 
 public class TeacherService {
     private static Teacher[] teachers;
+    // Первоначальное заполнение массива
+    static {
+        teachers = new Teacher[]{
+                new Teacher("Антонов Олег Вадимович", "физика", 8, 5),
+                new Teacher("Петров Владимир Георгиевич", "математика", 7, 7),
+                new Teacher("Кузнецова Елена Борисовна", "русский язык", 6, 4),
+                new Teacher("Иванова Ольга Николаевна", "математика", 8, 9),
+                new Teacher("Сидоров Борис Маратович", "биология", 7, 4)
+        };
+    }
     // Распечатать всех учителей
     public static void printTeachers() {
 
