@@ -162,4 +162,18 @@ public class TeacherService {
         }
         return null;
     }
+
+    public static boolean removeByName(String fio) {
+        for (int i = 0; i < teachers.length; i++) {
+            if (teachers[i].getFio().equalsIgnoreCase(fio)) {
+                Teacher[] newTeachers = new Teacher[teachers.length - 1];
+                for (int j = 0, k = 0; j < teachers.length; j++) {
+                    if (j != i) newTeachers[k++] = teachers[j];
+                }
+                teachers = newTeachers;
+                return true;
+            }
+        }
+        return false;
+    }
 }
