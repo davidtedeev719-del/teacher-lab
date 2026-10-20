@@ -154,10 +154,9 @@ public class TeacherService {
         System.out.println("\nНовые учителя добавлены!");
     }
 
-    public static Teacher searchByName(String fio) {
-        System.out.println("Поиск учителя: " + fio);
+    public static Teacher findByName(String fio) {
         for (int i = 0; i < teachers.length; i++) {
-            if (teachers[i].getFio().equals(fio)) {
+            if (teachers[i].getFio().equalsIgnoreCase(fio)) {
                 return teachers[i];
             }
         }
