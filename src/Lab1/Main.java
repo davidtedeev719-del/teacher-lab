@@ -1,5 +1,5 @@
 package Lab1;
-
+// ИЗМЕНЕНИЯ СО ВТОРОГО КОМПЬЮТЕРА
 public class Main {
 
     public static void main(String[] args) {
